@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Agent SaaS Platform</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { darkMode: 'class' }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .gradient-text { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .glass { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(10px); }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen">
+  <!-- Navigation -->
+  <nav class="glass fixed w-full z-50 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <div class="flex items-center space-x-2">
+          <div class="w-8 h-8 bg-gradient-to-br from-violet-500 to-fuchsia-500 rounded-lg"></div>
+          <span class="font-bold text-xl">AI Agent Platform</span>
+        </div>
+        <div class="flex items-center space-x-6">
+          <a href="#features" class="text-slate-400 hover:text-white transition">Features</a>
+          <a href="#pricing" class="text-slate-400 hover:text-white transition">Pricing</a>
+          <a href="login.html" class="bg-violet-600 hover:bg-violet-700 px-4 py-2 rounded-lg font-medium transition">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="relative pt-32 pb-20 overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-violet-900/20 via-slate-950 to-fuchsia-900/20"></div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-5xl md:text-7xl font-bold mb-6">
+        Your AI Agent<br>
+        <span class="gradient-text">In Minutes</span>
+      </h1>
+      <p class="text-xl text-slate-400 max-w-2xl mx-auto mb-10">
+        Zero-dashboard configuration. Just chat with your agent to set up bots, integrations, and automations.
+      </p>
+      <div class="flex justify-center gap-4">
+        <a href="setup-wizard.html" class="bg-violet-600 hover:bg-violet-700 px-8 py-4 rounded-xl font-semibold text-lg transition shadow-lg shadow-violet-600/25">
+          Create Your Agent
+        </a>
+        <a href="#features" class="border border-slate-700 hover:border-slate-600 px-8 py-4 rounded-xl font-semibold transition">
+          Learn More
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="py-20 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-center mb-16">Everything You Need</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="glass rounded-2xl p-8 border border-slate-800">
+          <div class="w-12 h-12 bg-violet-500/20 rounded-xl flex items-center justify-center mb-4">🤖</div>
+          <h3 class="text-xl font-semibold mb-2">AI Configuration</h3>
+          <p class="text-slate-400">Chat naturally to configure your agent. No complex dashboards.</p>
+        </div>
+        <div class="glass rounded-2xl p-8 border border-slate-800">
+          <div class="w-12 h-12 bg-fuchsia-500/20 rounded-xl flex items-center justify-center mb-4">🔗</div>
+          <h3 class="text-xl font-semibold mb-2">Multi-Channel</h3>
+          <p class="text-slate-400">Telegram, WhatsApp, SMS, Voice, Email — all in one platform.</p>
+        </div>
+        <div class="glass rounded-2xl p-8 border border-slate-800">
+          <div class="w-12 h-12 bg-cyan-500/20 rounded-xl flex items-center justify-center mb-4">⚡</div>
+          <h3 class="text-xl font-semibold mb-2">Pay Per Use</h3>
+          <p class="text-slate-400">Buy credits and only pay for what you use. No subscriptions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="py-20 border-t border-slate-800">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-center mb-16">Simple Pricing</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="glass rounded-2xl p-8 border border-slate-800">
+          <h3 class="text-lg font-medium text-slate-400 mb-2">Starter</h3>
+          <div class="text-4xl font-bold mb-4">€9</div>
+          <ul class="space-y-3 text-slate-400 mb-8">
+            <li>✓ 100 credits</li>
+            <li>✓ 1 bot</li>
+            <li>✓ Telegram</li>
+            <li>✓ Basic support</li>
+          </ul>
+          <a href="credits.html" class="block text-center border border-slate-700 hover:border-slate-600 py-3 rounded-lg transition">Choose Starter</a>
+        </div>
+        <div class="glass rounded-2xl p-8 border-2 border-violet-500 relative">
+          <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-violet-600 text-xs font-semibold px-3 py-1 rounded-full">POPULAR</div>
+          <h3 class="text-lg font-medium text-slate-400 mb-2">Growth</h3>
+          <div class="text-4xl font-bold mb-4">€29</div>
+          <ul class="space-y-3 text-slate-400 mb-8">
+            <li>✓ 500 credits</li>
+            <li>✓ 3 bots</li>
+            <li>✓ All channels</li>
+            <li>✓ Priority support</li>
+          </ul>
+          <a href="credits.html" class="block text-center bg-violet-600 hover:bg-violet-700 py-3 rounded-lg transition">Choose Growth</a>
+        </div>
+        <div class="glass rounded-2xl p-8 border border-slate-800">
+          <h3 class="text-lg font-medium text-slate-400 mb-2">Pay As You Go</h3>
+          <div class="text-4xl font-bold mb-4">Custom</div>
+          <ul class="space-y-3 text-slate-400 mb-8">
+            <li>✓ Flexible credits</li>
+            <li>✓ Unlimited bots</li>
+            <li>✓ All features</li>
+            <li>✓ White-label</li>
+          </ul>
+          <a href="credits.html" class="block text-center border border-slate-700 hover:border-slate-600 py-3 rounded-lg transition">Contact Sales</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-800 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-slate-500">
+      <p>&copy; 2026 AI Agent SaaS Platform. Built with OpenClaw.</p>
+    </div>
+  </footer>
+</body>
+</html>

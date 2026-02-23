@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Credits - AI Agent Platform</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = { darkMode: 'class' }</script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>body { font-family: 'Inter', sans-serif; }</style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen">
+  <!-- Sidebar -->
+  <aside class="fixed left-0 top-0 h-full w-64 bg-slate-900 border-r border-slate-800 p-6">
+    <div class="flex items-center space-x-2 mb-10">
+      <div class="w-8 h-8 bg-gradient-to-br from-violet-500 to-fuchsia-500 rounded-lg"></div>
+      <span class="font-bold text-lg">AI Platform</span>
+    </div>
+    <nav class="space-y-2">
+      <a href="dashboard.html" class="flex items-center space-x-3 text-slate-400 hover:bg-slate-800 px-4 py-3 rounded-lg transition">
+        <span>📊</span><span>Dashboard</span>
+      </a>
+      <a href="bot-config.html" class="flex items-center space-x-3 text-slate-400 hover:bg-slate-800 px-4 py-3 rounded-lg transition">
+        <span>🤖</span><span>Bot Config</span>
+      </a>
+      <a href="credits.html" class="flex items-center space-x-3 bg-violet-600/20 text-violet-300 px-4 py-3 rounded-lg">
+        <span>💎</span><span>Credits</span>
+      </a>
+      <a href="index.html" class="flex items-center space-x-3 text-slate-400 hover:bg-slate-800 px-4 py-3 rounded-lg transition mt-10">
+        <span>🚪</span><span>Logout</span>
+      </a>
+    </nav>
+  </aside>
+
+  <main class="ml-64 p-8">
+    <header class="mb-8">
+      <h1 class="text-3xl font-bold">Credits</h1>
+      <p class="text-slate-400">Manage your credits and purchase more</p>
+    </header>
+
+    <!-- Balance Card -->
+    <div class="bg-gradient-to-r from-violet-600 to-fuchsia-600 rounded-2xl p-8 mb-8">
+      <div class="text-violet-100 mb-2">Current Balance</div>
+      <div class="text-5xl font-bold mb-4">1,250 Credits</div>
+      <div class="text-violet-200 text-sm">Approximately 250 conversations remaining</div>
+    </div>
+
+    <!-- Purchase Options -->
+    <h2 class="text-xl font-semibold mb-4">Purchase Credits</h2>
+    <div class="grid md:grid-cols-3 gap-6 mb-8">
+      <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 hover:border-violet-500 transition cursor-pointer">
+        <div class="text-2xl font-bold mb-1">100 Credits</div>
+        <div class="text-slate-400 mb-4">€9</div>
+        <ul class="text-sm text-slate-400 space-y-2 mb-6">
+          <li>✓ ~20 conversations</li>
+          <li>✓ No expiration</li>
+        </ul>
+        <button class="w-full bg-violet-600 hover:bg-violet-700 py-2 rounded-lg transition">Buy Now</button>
+      </div>
+      <div class="bg-slate-900 border-2 border-violet-500 rounded-xl p-6 relative">
+        <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-violet-600 text-xs font-semibold px-3 py-1 rounded-full">BEST VALUE</div>
+        <div class="text-2xl font-bold mb-1">500 Credits</div>
+        <div class="text-slate-400 mb-4">€29</div>
+        <ul class="text-sm text-slate-400 space-y-2 mb-6">
+          <li>✓ ~100 conversations</li>
+          <li>✓ No expiration</li>
+          <li>✓ 10% bonus</li>
+        </ul>
+        <button class="w-full bg-violet-600 hover:bg-violet-700 py-2 rounded-lg transition">Buy Now</button>
+      </div>
+      <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 hover:border-violet-500 transition cursor-pointer">
+        <div class="text-2xl font-bold mb-1">1000 Credits</div>
+        <div class="text-slate-400 mb-4">€49</div>
+        <ul class="text-sm text-slate-400 space-y-2 mb-6">
+          <li>✓ ~200 conversations</li>
+          <li>✓ No expiration</li>
+          <li>✓ 20% bonus</li>
+        </ul>
+        <button class="w-full bg-violet-600 hover:bg-violet-700 py-2 rounded-lg transition">Buy Now</button>
+      </div>
+    </div>
+
+    <!-- History -->
+    <div class="bg-slate-900 border border-slate-800 rounded-xl p-6">
+      <h2 class="text-lg font-semibold mb-4">Transaction History</h2>
+      <div class="space-y-3">
+        <div class="flex items-center justify-between p-3 bg-slate-800/50 rounded-lg">
+          <div>
+            <div class="font-medium">Purchased 500 credits</div>
+            <div class="text-sm text-slate-400">Feb 21, 2026</div>
+          </div>
+          <div class="text-green-400">+500</div>
+        </div>
+        <div class="flex items-center justify-between p-3 bg-slate-800/50 rounded-lg">
+          <div>
+            <div class="font-medium">Bot conversation</div>
+            <div class="text-sm text-slate-400">Feb 21, 2026</div>
+          </div>
+          <div class="text-red-400">-5</div>
+        </div>
+        <div class="flex items-center justify-between p-3 bg-slate-800/50 rounded-lg">
+          <div>
+            <div class="font-medium">Welcome bonus</div>
+            <div class="text-sm text-slate-400">Feb 20, 2026</div>
+          </div>
+          <div class="text-green-400">+100</div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

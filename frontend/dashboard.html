@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - AI Agent Platform</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = { darkMode: 'class' }</script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>body { font-family: 'Inter', sans-serif; }</style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen">
+  <!-- Sidebar -->
+  <aside class="fixed left-0 top-0 h-full w-64 bg-slate-900 border-r border-slate-800 p-6">
+    <div class="flex items-center space-x-2 mb-10">
+      <div class="w-8 h-8 bg-gradient-to-br from-violet-500 to-fuchsia-500 rounded-lg"></div>
+      <span class="font-bold text-lg">AI Platform</span>
+    </div>
+    <nav class="space-y-2">
+      <a href="dashboard.html" class="flex items-center space-x-3 bg-violet-600/20 text-violet-300 px-4 py-3 rounded-lg">
+        <span>📊</span><span>Dashboard</span>
+      </a>
+      <a href="bot-config.html" class="flex items-center space-x-3 text-slate-400 hover:bg-slate-800 px-4 py-3 rounded-lg transition">
+        <span>🤖</span><span>Bot Config</span>
+      </a>
+      <a href="credits.html" class="flex items-center space-x-3 text-slate-400 hover:bg-slate-800 px-4 py-3 rounded-lg transition">
+        <span>💎</span><span>Credits</span>
+      </a>
+      <a href="index.html" class="flex items-center space-x-3 text-slate-400 hover:bg-slate-800 px-4 py-3 rounded-lg transition mt-10">
+        <span>🚪</span><span>Logout</span>
+      </a>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="ml-64 p-8">
+    <header class="flex justify-between items-center mb-8">
+      <h1 class="text-3xl font-bold">Dashboard</h1>
+      <div class="flex items-center space-x-4">
+        <div class="bg-slate-900 border border-slate-800 rounded-lg px-4 py-2">
+          <span class="text-slate-400">Credits:</span>
+          <span class="font-bold text-violet-400 ml-2">1,250</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Stats Grid -->
+    <div class="grid md:grid-cols-4 gap-6 mb-8">
+      <div class="bg-slate-900 border border-slate-800 rounded-xl p-6">
+        <div class="text-slate-400 text-sm mb-1">Active Bots</div>
+        <div class="text-3xl font-bold">2</div>
+      </div>
+      <div class="bg-slate-900 border border-slate-800 rounded-xl p-6">
+        <div class="text-slate-400 text-sm mb-1">Conversations</div>
+        <div class="text-3xl font-bold">1,847</div>
+      </div>
+      <div class="bg-slate-900 border border-slate-800 rounded-xl p-6">
+        <div class="text-slate-400 text-sm mb-1">Messages</div>
+        <div class="text-3xl font-bold">12.5K</div>
+      </div>
+      <div class="bg-slate-900 border border-slate-800 rounded-xl p-6">
+        <div class="text-slate-400 text-sm mb-1">Credits Used</div>
+        <div class="text-3xl font-bold">342</div>
+      </div>
+    </div>
+
+    <!-- Bot Status -->
+    <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 mb-8">
+      <h2 class="text-xl font-semibold mb-4">Your Bots</h2>
+      <div class="space-y-4">
+        <div class="flex items-center justify-between p-4 bg-slate-800/50 rounded-lg">
+          <div class="flex items-center space-x-4">
+            <div class="w-10 h-10 bg-green-500/20 rounded-full flex items-center justify-center">🤖</div>
+            <div>
+              <div class="font-medium">Sales Assistant</div>
+              <div class="text-sm text-slate-400">Telegram • Active</div>
+            </div>
+          </div>
+          <div class="flex items-center space-x-2">
+            <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+            <span class="text-sm text-green-400">Online</span>
+          </div>
+        </div>
+        <div class="flex items-center justify-between p-4 bg-slate-800/50 rounded-lg">
+          <div class="flex items-center space-x-4">
+            <div class="w-10 h-10 bg-yellow-500/20 rounded-full flex items-center justify-center">📞</div>
+            <div>
+              <div class="font-medium">Support Bot</div>
+              <div class="text-sm text-slate-400">WhatsApp • Configuring</div>
+            </div>
+          </div>
+          <div class="flex items-center space-x-2">
+            <span class="w-2 h-2 bg-yellow-500 rounded-full"></span>
+            <span class="text-sm text-yellow-400">Setup</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Recent Activity -->
+    <div class="bg-slate-900 border border-slate-800 rounded-xl p-6">
+      <h2 class="text-xl font-semibold mb-4">Recent Activity</h2>
+      <div class="space-y-3">
+        <div class="flex items-center space-x-3 text-sm">
+          <span class="text-slate-500">2 min ago</span>
+          <span class="text-violet-400">Sales Assistant</span>
+          <span class="text-slate-400">replied to message</span>
+        </div>
+        <div class="flex items-center space-x-3 text-sm">
+          <span class="text-slate-500">15 min ago</span>
+          <span class="text-violet-400">Credits</span>
+          <span class="text-slate-400">-5 credits used</span>
+        </div>
+        <div class="flex items-center space-x-3 text-sm">
+          <span class="text-slate-500">1 hour ago</span>
+          <span class="text-violet-400">Support Bot</span>
+          <span class="text-slate-400">configuration updated</span>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

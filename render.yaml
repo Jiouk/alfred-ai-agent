@@ -1,0 +1,26 @@
+services:
+  - type: web
+    name: ai-agent-saas
+    runtime: python
+    plan: starter
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: DATABASE_URL
+        value: sqlite:///./ai_agent_saas.db
+      - key: SECRET_KEY
+        generateValue: true
+      - key: FERNET_KEY
+        generateValue: true
+      - key: ADMIN_API_KEY
+        generateValue: true
+      - key: OPENCLAW_API_URL
+        value: https://api.openclaw.ai
+      - key: ENVIRONMENT
+        value: production
+      - key: DEBUG
+        value: false
+      - key: STARTER_CREDITS
+        value: 50
+      - key: PYTHON_VERSION
+        value: 3.11.0

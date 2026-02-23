@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Setup Wizard - AI Agent Platform</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = { darkMode: 'class' }</script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>body { font-family: 'Inter', sans-serif; }</style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen flex items-center justify-center">
+  <div class="w-full max-w-2xl p-8">
+    <!-- Progress -->
+    <div class="flex items-center justify-center space-x-4 mb-10">
+      <div class="w-10 h-10 bg-violet-600 rounded-full flex items-center justify-center font-semibold">1</div>
+      <div class="w-16 h-1 bg-violet-600"></div>
+      <div class="w-10 h-10 bg-slate-800 border border-slate-700 rounded-full flex items-center justify-center">2</div>
+      <div class="w-16 h-1 bg-slate-800"></div>
+      <div class="w-10 h-10 bg-slate-800 border border-slate-700 rounded-full flex items-center justify-center">3</div>
+    </div>
+
+    <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8">
+      <h1 class="text-2xl font-bold mb-2">Create Your AI Agent</h1>
+      <p class="text-slate-400 mb-8">Step 1 of 3 — Let's start with the basics</p>
+
+      <div class="space-y-6">
+        <div>
+          <label class="block text-sm font-medium mb-2">What should we call your bot?</label>
+          <input type="text" placeholder="e.g., Sales Assistant" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-3 focus:outline-none focus:border-violet-500">
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium mb-2">What's its main job?</label>
+          <select class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-3 focus:outline-none focus:border-violet-500">
+            <option>Sales & Lead Generation</option>
+            <option>Customer Support</option>
+            <option>Appointment Booking</option>
+            <option>General Assistant</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium mb-2">Personality</label>
+          <div class="grid grid-cols-2 gap-4">
+            <label class="flex items-center space-x-3 p-4 bg-slate-800 border border-slate-700 rounded-lg cursor-pointer hover:border-violet-500">
+              <input type="radio" name="personality" class="text-violet-600">
+              <span>Professional</span>
+            </label>
+            <label class="flex items-center space-x-3 p-4 bg-slate-800 border border-slate-700 rounded-lg cursor-pointer hover:border-violet-500">
+              <input type="radio" name="personality" class="text-violet-600">
+              <span>Friendly</span>
+            </label>
+            <label class="flex items-center space-x-3 p-4 bg-slate-800 border border-slate-700 rounded-lg cursor-pointer hover:border-violet-500">
+              <input type="radio" name="personality" class="text-violet-600">
+              <span>Witty</span>
+            </label>
+            <label class="flex items-center space-x-3 p-4 bg-slate-800 border border-slate-700 rounded-lg cursor-pointer hover:border-violet-500">
+              <input type="radio" name="personality" class="text-violet-600">
+              <span>Concise</span>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex justify-between mt-8">
+        <button class="text-slate-400 hover:text-white transition">Back</button>
+        <a href="dashboard.html" class="bg-violet-600 hover:bg-violet-700 px-6 py-3 rounded-lg font-semibold transition">Continue →</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

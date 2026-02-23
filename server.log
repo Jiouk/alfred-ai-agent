@@ -1,0 +1,15 @@
+INFO:     Started server process [43332]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+🚀 Starting AI Agent SaaS Platform...
+✅ Database initialized
+INFO:     127.0.0.1:54964 - "GET /health HTTP/1.1" 200 OK
+INFO:     192.168.1.67:54968 - "GET /health HTTP/1.1" 200 OK
+INFO:     192.168.1.67:54969 - "GET /docs HTTP/1.1" 200 OK
+INFO:     192.168.1.72:57431 - "GET /docs HTTP/1.1" 200 OK
+INFO:     192.168.1.72:57431 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     192.168.1.72:57432 - "GET /docs HTTP/1.1" 200 OK
+INFO:     192.168.1.72:57432 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     192.168.1.72:57663 - "GET /docs HTTP/1.1" 200 OK
+INFO:     192.168.1.72:57663 - "GET /openapi.json HTTP/1.1" 200 OK
